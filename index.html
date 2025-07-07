@@ -4,47 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ali Asad Hassan | .NET Engineer</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2721/2721290.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --text-color: #1e293b;
+      --card-bg: #fff;
+      --header-bg: linear-gradient(to right, #0f172a, #1e3a8a);
+      --footer-bg: #0f172a;
+      --accent: #3b82f6;
+    }
+    [data-theme="dark"] {
+      --bg-color: #0f172a;
+      --text-color: #f1f5f9;
+      --card-bg: #1e293b;
+      --header-bg: linear-gradient(to right, #1e293b, #334155);
+      --footer-bg: #1e293b;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Rubik', sans-serif; background: #f0f4f8; color: #1e293b; line-height: 1.7; }
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+      transition: background 0.3s, color 0.3s;
+    }
     header {
-      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      background: var(--header-bg);
       color: #fff;
-      padding: 3rem 1rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
     }
     header h1 { font-size: 3rem; font-weight: 700; }
     header p { font-size: 1.3rem; color: #cbd5e1; margin-top: 0.5rem; }
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .resume-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .resume-btn:hover {
+      background: #2563eb;
+    }
+    .toggle-theme {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #e2e8f0;
+      color: #000;
+      padding: 0.4rem 0.8rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
     main { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
     section { margin-bottom: 3rem; }
     h2 {
       font-size: 1.8rem;
-      color: #0f172a;
       margin-bottom: 1rem;
-      border-left: 6px solid #3b82f6;
+      border-left: 6px solid var(--accent);
       padding-left: 0.75rem;
     }
     ul { list-style: disc; margin-left: 1.5rem; }
     .card {
-      background: #fff;
+      background: var(--card-bg);
       padding: 2rem;
       border-radius: 16px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, background 0.3s ease;
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    a { color: #2563eb; text-decoration: none; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .footer {
       text-align: center;
       font-size: 0.95rem;
-      color: #64748b;
       padding: 2rem 1rem;
-      background: #0f172a;
+      background: var(--footer-bg);
       color: #94a3b8;
       margin-top: 3rem;
     }
@@ -66,15 +123,18 @@
       transition: all 0.3s ease;
     }
     .tech-item:hover {
-      background: #3b82f6;
+      background: var(--accent);
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Dark Mode</button>
   <header>
+    <img src="https://avatars.githubusercontent.com/u/14960342?v=4" alt="Ali Asad" class="profile-pic">
     <h1>Ali Asad Hassan</h1>
     <p>Full Stack .NET Engineer | Azure | Snowflake | Data Engineering</p>
+    <a href="/resume.pdf" class="resume-btn" target="_blank">📄 View Resume</a>
   </header>
   <main>
     <section class="card">
@@ -82,6 +142,7 @@
       <p>I’m a passionate Full Stack .NET Engineer with over 8 years of hands-on experience in building scalable web applications, enterprise APIs, and cloud-first data solutions. Currently, I’m working at Algomus where I handle large-scale data pipelines using Snowflake, Azure, and Databricks to drive real-time business intelligence for global clients.</p>
       <p>My journey started from classic .NET frameworks to now building robust systems using Azure services, distributed data platforms, and automation pipelines. Outside work, I enjoy experimenting with emerging technologies, sharing knowledge on GitHub, and planning a YouTube channel focused on tech, career, and productivity from Pakistan's perspective.</p>
     </section>
+
     <section class="card">
       <h2>Tech Stack</h2>
       <div class="tech-stack">
@@ -96,6 +157,7 @@
         <div class="tech-item">Agile / Scrum</div>
       </div>
     </section>
+
     <section class="card">
       <h2>How I Work</h2>
       <ul>
@@ -105,6 +167,7 @@
         <li>🤝 I treat collaboration with clarity and trust</li>
       </ul>
     </section>
+
     <section class="card">
       <h2>Experience</h2>
       <ul>
@@ -112,6 +175,7 @@
         <li><strong>Senior Software Engineer – Magnatec Systems</strong> (.NET WebForms, MVC, SQL Server, REST APIs)</li>
       </ul>
     </section>
+
     <section class="card">
       <h2>Projects</h2>
       <ul>
@@ -119,19 +183,82 @@
         <li><strong>Customer Mapping Tool</strong> – Web-based app in ASP.NET Core for managing enterprise-wide client code mappings with audit tracking.</li>
       </ul>
     </section>
+
     <section class="card">
       <h2>YouTube (Coming Soon)</h2>
       <p>I’m working on launching a YouTube channel to share knowledge, career advice, freelancing tips, and tech breakdowns in Roman Urdu & English — especially for Pakistani devs aspiring to go global.</p>
     </section>
+
     <section class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:aliasad@example.com">aliasad@example.com</a></p>
       <p>GitHub: <a href="https://github.com/aliasad47" target="_blank">github.com/aliasad47</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/aliasad47" target="_blank">linkedin.com/in/aliasad47</a></p>
     </section>
+    <section class="card">
+      <h2>Contact Form</h2>
+      <form action="https://formspree.io/f/mwkgnzvz" method="POST" style="display: grid; gap: 1rem;">
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 0.6rem; border-radius: 8px; border: 1px solid #ccc;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 0.6rem; border-radius: 8px; border: 1px solid #ccc;">
+        <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 0.6rem; border-radius: 8px; border: 1px solid #ccc;"></textarea>
+        <button type="submit" style="background: var(--accent); color: white; padding: 0.7rem; border: none; border-radius: 8px; font-weight: bold;">Send Message</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Newsletter Signup</h2>
+      <form action="#" method="POST" onsubmit="subscribeNewsletter(event)" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        <input type="email" placeholder="Your Email" required id="newsletterEmail" style="flex: 1; padding: 0.6rem; border-radius: 8px; border: 1px solid #ccc;">
+        <button type="submit" style="background: var(--accent); color: white; padding: 0.6rem 1.2rem; border: none; border-radius: 8px; font-weight: bold;">Subscribe</button>
+      </form>
+      <p id="newsletterMsg" style="margin-top: 1rem; color: var(--accent);"></p>
+    </section>
   </main>
   <footer class="footer">
     &copy; 2025 Ali Asad Hassan. Built with 💙 in Pakistan — powered by .NET & purpose.
   </footer>
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      document.documentElement.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    }
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'light');
+    }
+    document.documentElement.setAttribute("data-theme", localStorage.getItem('theme'));
+  </script>
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      const nextTheme = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", nextTheme);
+      localStorage.setItem("theme", nextTheme);
+    }
+    document.documentElement.setAttribute("data-theme", localStorage.getItem('theme') || 'light');
+
+    function subscribeNewsletter(event) {
+      event.preventDefault();
+      const email = document.getElementById("newsletterEmail").value;
+      const msg = document.getElementById("newsletterMsg");
+      msg.textContent = `Thank you for subscribing, ${email}!`;
+    }
+
+    // Animate on scroll effect
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.transform = "translateY(0)";
+          entry.target.style.opacity = "1";
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = 'all 0.6s ease-out';
+      observer.observe(card);
+    });
+  </script>
 </body>
 </html>
