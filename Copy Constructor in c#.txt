@@ -1,0 +1,60 @@
+// C# Program to illustrate the use
+// of Copy constructor
+using System;
+
+namespace copyConstructorExample {
+
+class Vehicle {
+
+    // variables
+    private string name;
+    private string color;
+    private int quantity;
+
+    //  Copy constructor
+    public Vehicle(Vehicle a)
+    {
+        name = a.name;
+        color = a.color;
+        quantity = a.quantity;
+    }
+
+    // Parameterized constructor
+    public Vehicle(string name, string color, int quantity)
+    {
+        this.name = name;
+        this.color = color;
+        this.quantity = quantity;
+    }
+
+    // Get details of Vehicles
+    public string DetailsofVehicle
+    {
+        get
+        {
+            return "Type: " + name.ToString() + 
+                   "\nColor: " + color.ToString() + 
+                   "\nQuantity: " + quantity.ToString();
+        }
+    }
+
+    // Main Method
+    public static void Main()
+    {
+
+        // Create a new object.
+        Vehicle v1 = new Vehicle("Bike", "Black", 40);
+
+        // here is v1 details are copied to v2.
+        Vehicle v2 = new Vehicle(v1);
+
+        Console.WriteLine(v2.DetailsofVehicle);
+    }
+}
+}
+
+Output: 
+
+Type: Bike
+Color: Black
+Quantity: 40
