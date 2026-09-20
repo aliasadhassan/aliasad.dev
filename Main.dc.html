@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ali Asad Hassan — Portfolio, desktop</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2EEE5;--gx:max(96px,calc((100% - 1248px)/2));--paper:#F2EEE5;--paper2:#E8E3D6;--ink:#14171B;--muted:#4F555B;--line:rgba(20,23,27,0.18);--accent:#E8552B;--accent-text:#B53716;--band:#14171B;--band-fg:#EDE9DF;--band-muted:#A9AEB4;--band-line:rgba(237,233,223,0.2);}
+.theme-dark{--paper:#101317;--paper2:#181C21;--ink:#EDE9DF;--muted:#A5AAB0;--line:rgba(237,233,223,0.18);--accent-text:#F27B55;--band:#1D2329;--band-fg:#EDE9DF;--band-muted:#A9AEB4;--band-line:rgba(237,233,223,0.2);}
+a{color:inherit;text-decoration:none;}
+a:hover{opacity:0.7;}
+</style>
+</helmet>
+<div class="{{themeClass}}" id="top" style="width:100%;min-width:1180px;box-sizing:border-box;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font-family:'Hanken Grotesk',system-ui,sans-serif;">
+
+  <!-- NAV -->
+  <header style="height:96px;box-sizing:border-box;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gx);border-bottom:1px solid var(--line);">
+    <a href="#top" aria-label="Ali Asad Hassan, back to top" style="display:flex;align-items:center;gap:14px;">
+      <span style="width:44px;height:44px;box-sizing:border-box;border:1.5px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif','Times New Roman',serif;font-size:22px;line-height:1;">AA</span>
+      <span style="font-size:16px;font-weight:600;">Ali Asad Hassan</span>
+    </a>
+    <nav aria-label="Primary" style="display:flex;align-items:center;gap:40px;font-size:15px;font-weight:500;">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://aliasadhassan.github.io/aliasad.dev/aliasadhassan_cv.pdf" style="height:44px;box-sizing:border-box;padding:0 20px;display:flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:999px;font-size:15px;font-weight:600;">
+      Download CV
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="m7 11 5 5 5-5"></path><path d="M5 20h14"></path></svg>
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section style="flex-shrink:0;padding:56px var(--gx) 64px;display:flex;flex-direction:column;gap:28px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">
+      <span>Senior Software Engineer</span>
+      <span>Lahore, Pakistan — Algomus (Algo)</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:end;">
+      <h1 style="grid-column:span 8;margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:168px;line-height:0.94;letter-spacing:-0.02em;">Ali Asad<br><em style="font-style:italic;">Hassan</em></h1>
+      <div style="grid-column:10 / span 3;height:316px;box-sizing:border-box;background:var(--paper2);border:1px solid var(--line);border-radius:4px;overflow:hidden;">
+        <img src="/assets/aliasad.jpg" alt="Portrait of Ali Asad Hassan" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 14%;">
+      </div>
+    </div>
+    <div style="margin-top:16px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <p style="grid-column:span 7;margin:0;font-size:28px;line-height:1.4;font-weight:400;text-wrap:pretty;">I build and run the backend and data systems behind enterprise software: .NET services, Azure pipelines and Snowflake warehouses that keep working when the business depends on them.</p>
+      <div style="grid-column:9 / span 4;display:flex;flex-direction:column;gap:12px;">
+        <a href="#work" style="height:56px;box-sizing:border-box;padding:0 28px;display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:var(--paper);border-radius:999px;font-size:16px;font-weight:600;">
+          View selected work
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m6 13 6 6 6-6"></path></svg>
+        </a>
+        <a href="https://aliasadhassan.github.io/aliasad.dev/resume.pdf" style="height:56px;box-sizing:border-box;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--ink);border-radius:999px;font-size:16px;font-weight:600;">
+          Download CV (PDF)
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="m7 11 5 5 5-5"></path><path d="M5 20h14"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div style="margin-top:20px;border:1px solid var(--line);border-radius:4px;background:var(--paper2);">
+      <svg viewBox="0 0 1248 204" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OneAlgo data path: AWS Redshift to Azure Databricks to Snowflake to downstream reporting, with Azure Data Factory pipelines and EDI files feeding the middle stages" style="display:block;width:100%;height:auto;color:var(--ink);">
+        <text x="48" y="36" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;fill:var(--muted);">ONEALGO — DATA PATH</text>
+        <rect x="360" y="50" width="528" height="30" rx="15" fill="none" stroke="currentColor" stroke-width="1.25"></rect>
+        <text x="624" y="70" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--ink);">Azure Data Factory pipelines  ·  EDI 846 / 850 / 856 / 940</text>
+        <path d="M468 80V96M780 80V96" stroke="currentColor" stroke-width="1.25"></path>
+        <rect x="48" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"></rect>
+        <text x="68" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">AWS Redshift</text>
+        <text x="68" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">legacy warehouse</text>
+        <rect x="360" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"></rect>
+        <text x="380" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">Azure Databricks</text>
+        <text x="380" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">Spark · Delta Lake</text>
+        <rect x="672" y="96" width="216" height="72" rx="6" fill="#E8552B" stroke="currentColor" stroke-width="1.5"></rect>
+        <text x="692" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:#14171B;">Snowflake</text>
+        <text x="692" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:#14171B;">current platform</text>
+        <rect x="984" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"></rect>
+        <text x="1004" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">Reporting</text>
+        <text x="1004" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">downstream consumers</text>
+        <path d="M276 132H348M342 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M588 132H660M654 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M900 132H972M966 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <text x="312" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">migrate</text>
+        <text x="624" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">1 TB+</text>
+        <text x="936" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">30% faster</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section aria-label="At a glance" style="flex-shrink:0;padding:0 var(--gx);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));">
+      <div style="padding:32px 32px 32px 0;">
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:80px;line-height:1;">9+</div>
+        <div style="margin-top:10px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Years building enterprise systems</div>
+      </div>
+      <div style="padding:32px;border-left:1px solid var(--line);">
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:80px;line-height:1;">1 TB+</div>
+        <div style="margin-top:10px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Migrated from Databricks to Snowflake</div>
+      </div>
+      <div style="padding:32px;border-left:1px solid var(--line);">
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:80px;line-height:1;">30%</div>
+        <div style="margin-top:10px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Faster downstream reporting after the move</div>
+      </div>
+      <div style="padding:32px 0 32px 32px;border-left:1px solid var(--line);">
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:80px;line-height:1;">4</div>
+        <div style="margin-top:10px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">EDI document types processed: 846, 850, 856, 940</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" style="flex-shrink:0;padding:112px var(--gx);display:flex;flex-direction:column;gap:56px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-text);">01 — Selected work</div>
+      <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:72px;line-height:1;letter-spacing:-0.01em;">Work that <em style="font-style:italic;">runs in production.</em></h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px;">
+      <article style="border:1px solid var(--ink);border-radius:4px;padding:48px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:stretch;">
+        <div style="grid-column:span 7;display:flex;flex-direction:column;gap:20px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">01 · Key project · Algomus (Algo) · 2024 — present</div>
+          <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:64px;line-height:1;">OneAlgo</h3>
+          <p style="margin:0;font-size:20px;line-height:1.6;text-wrap:pretty;">Enterprise data platform at Algomus. I migrated its legacy data architecture from AWS Redshift to Azure Databricks, then moved 1 TB+ on to Snowflake, and I support the production-critical file and EDI integrations around it.</p>
+          <div style="display:flex;flex-direction:column;margin-top:8px;">
+            <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+              <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Platform migration</div>
+              <div style="font-size:16px;line-height:1.55;">AWS Redshift to Azure Databricks (Apache Spark, Delta Lake), then Databricks to Snowflake.</div>
+            </div>
+            <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+              <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Scale and speed</div>
+              <div style="font-size:16px;line-height:1.55;">1 TB+ of enterprise data moved, data models restructured, queries tuned: 30% faster downstream reporting.</div>
+            </div>
+            <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+              <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Production support</div>
+              <div style="font-size:16px;line-height:1.55;">Root-cause analysis on file and EDI flows, job and file monitoring with ActiveXperts, secure AS2 B2B integrations.</div>
+            </div>
+          </div>
+        </div>
+        <div style="grid-column:9 / span 4;display:flex;flex-direction:column;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding-bottom:16px;">Stack on this project</div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">Azure Databricks</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">Spark · Delta Lake</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">Snowflake</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">warehouse</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">Azure Data Factory</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">pipelines</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">SQL</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">data models</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">EDI · AS2</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">B2B integration</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">ActiveXperts</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">monitoring</span></div>
+          <div style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-weight:600;">AWS Redshift</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">legacy</span></div>
+          <a href="CaseStudy.dc.html" style="margin-top:auto;height:52px;box-sizing:border-box;padding:0 24px;display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:var(--paper);border-radius:999px;font-size:15px;font-weight:600;">
+            Read the case study
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </article>
+
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;">
+        <article style="border:1px solid var(--line);border-radius:4px;background:var(--paper2);padding:32px;display:flex;flex-direction:column;gap:14px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">02 · Algomus (Algo)</div>
+          <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:34px;line-height:1.1;">Microservices platform</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;">Microservices in .NET built on DDD and Clean Architecture, with RabbitMQ for messaging, Redis for caching and Docker for delivery. Outbox, Unit of Work and Repository patterns throughout.</p>
+          <div style="margin-top:auto;padding-top:6px;display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;">
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">.NET</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">DDD</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">RabbitMQ</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">Redis</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">Docker</span>
+          </div>
+        </article>
+        <article style="border:1px solid var(--line);border-radius:4px;background:var(--paper2);padding:32px;display:flex;flex-direction:column;gap:14px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">03 · Algomus (Algo)</div>
+          <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:34px;line-height:1.1;">Secure API layer</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;">REST APIs with JWT authentication and refresh tokens, backed by role-based access control, rate limiting, CORS and CSRF protection, with secrets kept in Azure Key Vault.</p>
+          <div style="margin-top:auto;padding-top:6px;display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;">
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">JWT</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">RBAC</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">Azure Key Vault</span>
+          </div>
+        </article>
+        <article style="border:1px solid var(--line);border-radius:4px;background:var(--paper2);padding:32px;display:flex;flex-direction:column;gap:14px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">04 · Algomus (Algo)</div>
+          <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:34px;line-height:1.1;">Customer Mapping Tool</h3>
+          <p style="margin:0;font-size:16px;line-height:1.6;">ASP.NET Core web app for managing enterprise-wide client code mappings, with audit tracking on every change.</p>
+          <div style="margin-top:auto;padding-top:6px;display:flex;flex-wrap:wrap;gap:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;">
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">ASP.NET Core</span>
+            <span style="padding:6px 10px;border:1px solid var(--muted);border-radius:999px;">Audit tracking</span>
+          </div>
+        </article>
+      </div>
+
+      <div style="border:1px solid var(--ink);border-radius:4px;padding:40px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:center;">
+        <div style="grid-column:span 5;display:flex;flex-direction:column;gap:12px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">Earlier · Magnatec Systems · 2017 — 2024</div>
+          <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:36px;line-height:1.1;">ERP suites for Arab Sea Information Systems, Riyadh</h3>
+        </div>
+        <div style="grid-column:7 / span 6;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;">
+          <a href="https://www.smacc.com/en/" style="min-height:64px;box-sizing:border-box;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:4px;">
+            <span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:17px;font-weight:600;">SMACC ERP</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">smacc.com</span></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+          <a href="https://scribeserp.com/en/" style="min-height:64px;box-sizing:border-box;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:4px;">
+            <span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:17px;font-weight:600;">Scribes ERP</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">scribeserp.com</span></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+          <a href="https://3spos.com/en/" style="min-height:64px;box-sizing:border-box;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:4px;">
+            <span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:17px;font-weight:600;">3S POS</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">3spos.com</span></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+          <a href="https://configuration.smacc.com/" style="min-height:64px;box-sizing:border-box;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:4px;">
+            <span style="display:flex;flex-direction:column;gap:2px;"><span style="font-size:17px;font-weight:600;">SMACC Launcher</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;color:var(--muted);">configuration.smacc.com</span></span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" style="flex-shrink:0;padding:112px var(--gx);border-top:1px solid var(--line);display:flex;flex-direction:column;gap:56px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-text);">02 — Experience</div>
+      <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:72px;line-height:1;letter-spacing:-0.01em;">Where I have <em style="font-style:italic;">worked.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:40px;">
+        <div style="border-top:1px solid var(--ink);padding-top:32px;display:flex;flex-direction:column;gap:12px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);">Education</div>
+          <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:36px;line-height:1.1;">BS Computer Science</div>
+          <div style="font-size:16px;line-height:1.5;color:var(--muted);">University of South Asia, Lahore — 2014</div>
+        </div>
+        <a href="https://aliasadhassan.github.io/aliasad.dev/resume.pdf" style="height:52px;box-sizing:border-box;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border:1.5px solid var(--ink);border-radius:999px;font-size:15px;font-weight:600;">
+          Full CV (PDF)
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="m7 11 5 5 5-5"></path><path d="M5 20h14"></path></svg>
+        </a>
+      </div>
+      <div style="grid-column:5 / span 8;display:flex;flex-direction:column;">
+        <article style="border-top:1px solid var(--ink);padding:32px 0 48px;display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;">
+            <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Algomus (Algo)</h3>
+            <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-text);">02/2024 — Present</span>
+          </div>
+          <div style="font-size:17px;line-height:1.5;color:var(--muted);">Senior Software Engineer · Lahore, Pakistan · Key project: OneAlgo</div>
+          <ul style="list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.55;">
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Migrated legacy data architecture from AWS Redshift to Azure Databricks, using Apache Spark and Delta Lake.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Moved 1 TB+ of enterprise data from Databricks to Snowflake, restructuring data models and tuning queries for a 30% gain in downstream reporting speed.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Built and optimised large-scale pipelines with Azure Data Factory, Snowflake, SQL and EDI integrations.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Supported production-critical file-based and EDI integrations with root-cause analysis across distributed systems; monitored jobs, file flows and system health in ActiveXperts.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Designed secure REST APIs (JWT, refresh tokens) and microservices with .NET, DDD, Clean Architecture, RabbitMQ, Redis and Docker.</span></li>
+          </ul>
+        </article>
+        <article style="border-top:1px solid var(--ink);padding:32px 0 48px;display:flex;flex-direction:column;gap:20px;">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px;">
+            <h3 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Magnatec Systems</h3>
+            <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">01/2017 — 01/2024</span>
+          </div>
+          <div style="font-size:17px;line-height:1.5;color:var(--muted);">Senior Software Engineer · Lahore, Punjab · SMACC, 3SPOS and Scribes ERP</div>
+          <ul style="list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.55;">
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Architected a complete HRMS and ERP solution covering employee lifecycles, automated payroll engines and cross-module operations.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Wrote complex SQL from scratch for financial accounting, real-time inventory and analytical workflows.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Tuned high-volume SQL Server databases with query tuning, stored procedures and triggers, speeding up report generation.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Built ASP.NET WebForms and MVC applications with JavaScript, jQuery and Bootstrap.</span></li>
+            <li style="display:flex;gap:16px;"><span style="flex-shrink:0;width:6px;height:6px;margin-top:10px;background:var(--accent);"></span><span>Led the full SDLC: REST APIs, third-party ERP integrations, stakeholder coordination and developer mentoring.</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" style="flex-shrink:0;padding:112px var(--gx);background:var(--band);color:var(--band-fg);display:flex;flex-direction:column;gap:56px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">03 — Stack</div>
+      <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:72px;line-height:1;letter-spacing:-0.01em;">What I <em style="font-style:italic;">work with.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));column-gap:32px;row-gap:48px;">
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Backend</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">C# · ASP.NET Core · ASP.NET MVC · Web API · LINQ · Entity Framework · ADO.NET · FluentValidation · Serilog</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Data and cloud</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">Azure Databricks · Azure Data Factory · Azure Data Lake · Blob Storage · Snowflake · Landing / Processing / Archive layers</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Databases</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">SQL Server · stored procedures · query optimisation · linked servers · MSDTC · Oracle · Snowflake</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Architecture</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">Microservices · DDD · Clean Architecture · Event-driven · Outbox · Unit of Work · Repository</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Security</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">JWT · Refresh tokens · RBAC · Azure Key Vault · Rate limiting · CORS · CSRF · Bcrypt</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Messaging and caching</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">RabbitMQ · Redis · L1 / L2 / L3 caching strategies</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Integration</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">EDI 846 / 850 / 856 / 940 · AS2 B2B · file-based integrations</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">DevOps</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">Docker · GitHub · CI/CD pipelines · SonarQube</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Production support</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">Tidal · ActiveXperts · job, file and service health monitoring · root-cause analysis</p>
+      </div>
+      <div style="border-top:1px solid var(--band-line);padding-top:20px;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#F27B55;">Frontend</div>
+        <p style="margin:0;font-size:16px;line-height:1.7;">Angular 16 / 17 / 21 · JavaScript · jQuery · AJAX · HTML · CSS · Bootstrap</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" style="flex-shrink:0;padding:112px var(--gx);display:flex;flex-direction:column;gap:56px;">
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-text);">04 — Approach</div>
+      <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:72px;line-height:1;letter-spacing:-0.01em;">How I <em style="font-style:italic;">approach it.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:32px;">
+      <div style="border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:24px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">01</div>
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-style:italic;font-size:36px;line-height:1.15;">I ask the right questions before I write code.</div>
+      </div>
+      <div style="border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:24px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">02</div>
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-style:italic;font-size:36px;line-height:1.15;">Clean architecture beats clever hacks.</div>
+      </div>
+      <div style="border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:24px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">03</div>
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-style:italic;font-size:36px;line-height:1.15;">I respect timelines but never compromise quality.</div>
+      </div>
+      <div style="border-top:2px solid var(--ink);padding-top:20px;display:flex;flex-direction:column;gap:24px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">04</div>
+        <div style="font-family:'Instrument Serif','Times New Roman',serif;font-style:italic;font-size:36px;line-height:1.15;">I treat collaboration with clarity and trust.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="flex-shrink:0;padding:112px var(--gx);background:var(--accent);color:#14171B;display:flex;flex-direction:column;gap:32px;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;">05 — Contact</div>
+    <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:200px;line-height:0.9;letter-spacing:-0.02em;">Let's <em style="font-style:italic;">talk.</em></h2>
+    <div style="margin-top:24px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 5;display:flex;flex-direction:column;gap:28px;">
+        <p style="margin:0;font-size:22px;line-height:1.5;text-wrap:pretty;">Got a data platform, integration or backend problem? Send me a note and I will get back to you.</p>
+        <a href="mailto:aliasadhassan@gmail.com" style="align-self:flex-start;height:56px;box-sizing:border-box;padding:0 28px;display:flex;align-items:center;gap:12px;background:#14171B;color:#F2EEE5;border-radius:999px;font-size:16px;font-weight:600;">
+          Email me
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+        </a>
+      </div>
+      <div style="grid-column:7 / span 6;display:flex;flex-direction:column;">
+        <a href="mailto:aliasadhassan@gmail.com" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-top:1px solid #14171B;">
+          <span style="display:flex;flex-direction:column;gap:6px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">Email</span><span style="font-family:'Instrument Serif','Times New Roman',serif;font-size:36px;line-height:1.1;">aliasadhassan@gmail.com</span></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ali-asad-59719ab9" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-top:1px solid #14171B;">
+          <span style="display:flex;flex-direction:column;gap:6px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">LinkedIn</span><span style="font-family:'Instrument Serif','Times New Roman',serif;font-size:36px;line-height:1.1;">linkedin.com/in/ali-asad-59719ab9</span></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+        </a>
+        <a href="https://github.com/aliasadhassan" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-top:1px solid #14171B;border-bottom:1px solid #14171B;">
+          <span style="display:flex;flex-direction:column;gap:6px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">GitHub</span><span style="font-family:'Instrument Serif','Times New Roman',serif;font-size:36px;line-height:1.1;">github.com/aliasadhassan</span></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (absorbs any spare height) -->
+  <footer style="flex-shrink:0;box-sizing:border-box;padding:36px var(--gx) 48px;display:flex;justify-content:space-between;align-items:flex-start;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.06em;color:var(--muted);">
+    <span>© 2026 Ali Asad Hassan</span>
+    <span>Built in Lahore, Pakistan — powered by .NET and purpose.</span>
+    <a href="#top" style="color:var(--ink);">Back to top</a>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["light","dark"],"default":"light"},"$preview":{"width":1440,"height":6420}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { themeClass: (this.props.theme ?? 'light') === 'dark' ? 'theme-dark' : '' };
+  }
+}
+</script>
+</body>
+</html>
