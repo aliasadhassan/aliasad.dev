@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OneAlgo case study | Ali Asad Hassan</title>
+<meta name="description" content="Portfolio of Ali Asad Hassan, Senior Software Engineer specialising in .NET, Azure Data Factory, Databricks and Snowflake.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OneAlgo case study | Ali Asad Hassan">
+<meta property="og:description" content="Portfolio of Ali Asad Hassan, Senior Software Engineer specialising in .NET, Azure Data Factory, Databricks and Snowflake.">
+<meta property="og:image" content="https://aliasadhassan.github.io/aliasad.dev/aliasad.jpg">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F2EEE5;--gx:max(96px,calc((100% - 1248px)/2));--paper:#F2EEE5;--paper2:#E8E3D6;--ink:#14171B;--muted:#4F555B;--line:rgba(20,23,27,0.18);--accent:#E8552B;--accent-text:#B53716;--band:#14171B;--band-fg:#EDE9DF;--band-muted:#A9AEB4;--band-line:rgba(237,233,223,0.2);}
+.theme-dark{--paper:#101317;--paper2:#181C21;--ink:#EDE9DF;--muted:#A5AAB0;--line:rgba(237,233,223,0.18);--accent-text:#F27B55;--band:#1D2329;--band-fg:#EDE9DF;--band-muted:#A9AEB4;--band-line:rgba(237,233,223,0.2);}
+a{color:inherit;text-decoration:none;}
+a:hover{opacity:0.7;}
+</style>
+</head>
+<body>
+<div id="top" style="width:100%;min-width:1180px;box-sizing:border-box;display:flex;flex-direction:column;background:var(--paper);color:var(--ink);font-family:'Hanken Grotesk',system-ui,sans-serif;">
+
+  <!-- NAV -->
+  <header style="height:96px;box-sizing:border-box;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gx);border-bottom:1px solid var(--line);">
+    <a href="index.html#work" style="height:44px;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
+      All work
+    </a>
+    <a href="index.html" aria-label="Ali Asad Hassan, home" style="display:flex;align-items:center;gap:14px;">
+      <span style="width:44px;height:44px;box-sizing:border-box;border:1.5px solid var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Instrument Serif','Times New Roman',serif;font-size:22px;line-height:1;">AA</span>
+      <span style="font-size:16px;font-weight:600;">Ali Asad Hassan</span>
+    </a>
+    <a href="aliasadhassan_cv.pdf" style="height:44px;box-sizing:border-box;padding:0 20px;display:flex;align-items:center;gap:8px;border:1.5px solid var(--ink);border-radius:999px;font-size:15px;font-weight:600;">
+      Download CV
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+    </a>
+  </header>
+
+  <!-- TITLE -->
+  <section style="flex-shrink:0;padding:72px var(--gx) 64px;display:flex;flex-direction:column;gap:28px;">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-text);">Case study · OneAlgo · Algomus (Algo)</div>
+    <h1 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:136px;line-height:0.95;letter-spacing:-0.02em;">From Redshift<br><em style="font-style:italic;">to Snowflake.</em></h1>
+    <div style="margin-top:24px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <p style="grid-column:span 7;margin:0;font-size:26px;line-height:1.45;text-wrap:pretty;">How I moved OneAlgo&#39;s data layer across three platforms, cut downstream reporting time by 30%, and kept the file and EDI integrations around it running.</p>
+      <div style="grid-column:9 / span 4;display:flex;flex-direction:column;">
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--ink);font-size:15px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Role</span><span style="font-weight:600;text-align:right;">Senior Software Engineer</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Company</span><span style="font-weight:600;text-align:right;">Algomus (Algo)</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);font-size:15px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Period</span><span style="font-weight:600;text-align:right;">02/2024 — present</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15px;"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);">Scope</span><span style="font-weight:600;text-align:right;">1 TB+ of enterprise data</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGRAM -->
+  <section style="flex-shrink:0;padding:0 var(--gx) 80px;">
+    <div style="border:1px solid var(--line);border-radius:4px;background:var(--paper2);">
+      <svg viewBox="0 0 1248 204" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OneAlgo data path: AWS Redshift to Azure Databricks to Snowflake to downstream reporting, with Azure Data Factory pipelines and EDI files feeding the middle stages" style="display:block;width:100%;height:auto;color:var(--ink);">
+        <text x="48" y="36" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;fill:var(--muted);">ONEALGO — DATA PATH</text>
+        <rect x="360" y="50" width="528" height="30" rx="15" fill="none" stroke="currentColor" stroke-width="1.25"/>
+        <text x="624" y="70" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--ink);">Azure Data Factory pipelines  ·  EDI 846 / 850 / 856 / 940</text>
+        <path d="M468 80V96M780 80V96" stroke="currentColor" stroke-width="1.25"/>
+        <rect x="48" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"/>
+        <text x="68" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">AWS Redshift</text>
+        <text x="68" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">legacy warehouse</text>
+        <rect x="360" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"/>
+        <text x="380" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">Azure Databricks</text>
+        <text x="380" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">Spark · Delta Lake</text>
+        <rect x="672" y="96" width="216" height="72" rx="6" fill="#E8552B" stroke="currentColor" stroke-width="1.5"/>
+        <text x="692" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:#14171B;">Snowflake</text>
+        <text x="692" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:#14171B;">current platform</text>
+        <rect x="984" y="96" width="216" height="72" rx="6" style="fill:var(--paper);" stroke="currentColor" stroke-width="1.5"/>
+        <text x="1004" y="126" style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:20px;font-weight:600;fill:var(--ink);">Reporting</text>
+        <text x="1004" y="148" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;fill:var(--muted);">downstream consumers</text>
+        <path d="M276 132H348M342 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M588 132H660M654 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M900 132H972M966 126l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="312" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">migrate</text>
+        <text x="624" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">1 TB+</text>
+        <text x="936" y="120" text-anchor="middle" style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11.5px;fill:var(--muted);">30% faster</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section style="flex-shrink:0;padding:0 var(--gx) 80px;display:flex;flex-direction:column;">
+    <div style="border-top:1px solid var(--ink);padding:48px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">01</div>
+        <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Where it <em style="font-style:italic;">started</em></h2>
+      </div>
+      <div style="grid-column:5 / span 8;display:flex;flex-direction:column;gap:24px;">
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">OneAlgo&#39;s data layer lived on a legacy architecture in AWS Redshift. Algo&#39;s management decided to move it to Azure Databricks, with one main goal: bring the running cost down.</p>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--line);padding:48px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">02</div>
+        <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Redshift to <em style="font-style:italic;">Databricks</em></h2>
+      </div>
+      <div style="grid-column:5 / span 8;display:flex;flex-direction:column;gap:24px;">
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">I orchestrated the migration of the legacy data architectures to Azure Databricks, moving the notebooks over one by one, with Spark for processing and Delta Lake for storage. Pipelines were built and optimised in Azure Data Factory, alongside SQL and EDI integrations.</p>
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">While the notebooks were still moving, the cost looked good. A few months after they were live, the picture changed: the bill was almost the same as Redshift, a difference too small to justify the switch.</p>
+        <div style="display:flex;flex-direction:column;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7; padding-bottom:14px;">How it was run</div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Syntax translation</div>
+            <div style="font-size:16px;line-height:1.55;">Redshift and Databricks name and write some functions differently, so each notebook&#39;s code was adapted to Databricks syntax, one notebook at a time.</div>
+          </div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Check per notebook</div>
+            <div style="font-size:16px;line-height:1.55;">Every translated notebook was checked on its own before moving on to the next one.</div>
+          </div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Parallel run</div>
+            <div style="font-size:16px;line-height:1.55;">Redshift and Databricks ran side by side on live data, so any difference could be traced back to a specific notebook.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--line);padding:48px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">03</div>
+        <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Databricks to <em style="font-style:italic;">Snowflake</em></h2>
+      </div>
+      <div style="grid-column:5 / span 8;display:flex;flex-direction:column;gap:24px;">
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">So the team took one more step, to Snowflake. That move took more than 1 TB of enterprise data out of Azure Databricks. I restructured the data models and optimised query performance, which made downstream reporting 30% faster.</p>
+        <div style="border:1px solid var(--ink);border-radius:4px;background:var(--paper2);padding:28px;display:flex;flex-direction:column;gap:20px;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-text);">The key change in the pipelines</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+              <span style="width:64px;flex-shrink:0;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-size:12px;">Before</span>
+              <span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:var(--paper);">ADF pipeline</span><span aria-hidden="true">&rarr;</span><span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:var(--paper);">Notebook activity</span><span aria-hidden="true">&rarr;</span><span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:var(--paper);">Databricks notebook</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+              <span style="width:64px;flex-shrink:0;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;font-size:12px;">After</span>
+              <span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:var(--paper);">ADF pipeline</span><span aria-hidden="true">&rarr;</span><span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:var(--paper);">Lookup activity</span><span aria-hidden="true">&rarr;</span><span style="padding:7px 12px;border:1px solid var(--ink);border-radius:999px;background:#E8552B;color:#14171B;font-weight:500;">Snowflake notebook</span>
+            </div>
+          </div>
+          <p style="margin:0;font-size:18px;line-height:1.6;text-wrap:pretty;">In the Azure Data Factory pipelines, I removed the Databricks notebook activities and added Lookup activities in their place. The Lookups now call the notebooks that run in Snowflake.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7; padding-bottom:14px;">Why Snowflake</div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Modern platform</div>
+            <div style="font-size:16px;line-height:1.55;">The latest technology, and the best option the team saw for a modern data platform.</div>
+          </div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Pay as you go</div>
+            <div style="font-size:16px;line-height:1.55;">Compute is billed by usage, so cost follows what actually runs.</div>
+          </div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Lowest cost</div>
+            <div style="font-size:16px;line-height:1.55;">Even after every notebook was migrated, it has been the cheapest of the three so far.</div>
+          </div>
+          <div style="display:grid;grid-template-columns:180px minmax(0,1fr);column-gap:24px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+            <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);line-height:1.7;">Recoverability</div>
+            <div style="font-size:16px;line-height:1.55;">Deleted or removed data can be recovered for up to 90 days.</div>
+          </div>
+        </div>
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">I used the same method as in the first move: translate the syntax, check each notebook, and run Databricks and Snowflake in parallel on live data. That made it possible to trace exactly which notebook was causing an issue, if any. For this move I also wrote pre- and post-migration scripts, so the data could be verified properly before and after each step.</p>
+      </div>
+    </div>
+    <div style="border-top:1px solid var(--line);border-bottom:1px solid var(--ink);padding:48px 0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:32px;align-items:start;">
+      <div style="grid-column:span 4;display:flex;flex-direction:column;gap:14px;">
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;color:var(--accent-text);">04</div>
+        <h2 style="margin:0;font-family:'Instrument Serif','Times New Roman',serif;font-weight:400;font-size:44px;line-height:1.05;">Keeping it <em style="font-style:italic;">running</em></h2>
+      </div>
+      <div style="grid-column:5 / span 8;display:flex;flex-direction:column;gap:24px;">
+        <p style="margin:0;font-size:20px;line-height:1.65;text-wrap:pretty;">Around the platform work, I support production-critical file-based and EDI integrations: root-cause analysis across distributed systems, and monitoring of jobs, file flows and system health in ActiveXperts, plus secure AS2 / EDI B2B integrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section aria-label="Results" style="flex-shrink:0;padding:0 var(--gx) 80px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:32px;">
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:96px;line-height:1;">1 TB+</div>
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Enterprise data moved to Snowflake</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:96px;line-height:1;">30%</div>
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Faster downstream reporting</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="font-family:'Instrument Serif','Times New Roman',serif;font-size:96px;line-height:1;">3</div>
+      <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;line-height:1.6;color:var(--muted);">Platforms crossed: Redshift, Databricks, Snowflake</div>
+    </div>
+  </section>
+
+  <!-- BACK CTA -->
+  <a href="index.html#work" style="flex-shrink:0;padding:72px var(--gx);background:var(--accent);color:#14171B;display:flex;justify-content:space-between;align-items:center;">
+    <span style="display:flex;flex-direction:column;gap:12px;">
+      <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.1em;text-transform:uppercase;">Next</span>
+      <span style="font-family:'Instrument Serif','Times New Roman',serif;font-size:96px;line-height:1;letter-spacing:-0.02em;">Back to <em style="font-style:italic;">all work</em></span>
+    </span>
+    <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></svg>
+  </a>
+
+  <!-- FOOTER (absorbs any spare height) -->
+  <footer style="flex-shrink:0;box-sizing:border-box;padding:36px var(--gx) 48px;display:flex;justify-content:space-between;align-items:flex-start;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;letter-spacing:0.06em;color:var(--muted);">
+    <span>© 2026 Ali Asad Hassan</span>
+    <span>Built in Lahore, Pakistan — powered by .NET and purpose.</span>
+    <a href="#top" style="color:var(--ink);">Back to top</a>
+  </footer>
+
+</div>
+</body>
+</html>
